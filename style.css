@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.mhead1 {
+    font-family: "Montserrat", sans-serif;
+    background: white;
+}
+
+.mhead2 {
+    background: rgb(237, 236, 237);
+    font-family: "Nunito", sans-serif;
+}
+
+.mhead3 {
+    font-weight: 600;
+}
+
+#about, #projects, #skills, #contact {
+    font-family: "Montserrat", sans-serif;
+}
