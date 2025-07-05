@@ -1,80 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio - Harsh Sharma</title>
-  <link rel="stylesheet" href="./style.css">
-  <script src="https://cdn.tailwindcss.com"></script>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Harsh Sharma | Portfolio</title>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="shortcut icon" href="img/favicon.ico" />
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans">
 
-  <header class="mhead1 shadow sticky top-0 z-50">
-    <div class="container mx-auto flex justify-between items-center p-4">
-      <h1 class="text-xl font-bold">Harsh Sharma</h1>
-      <nav class="mhead3 space-x-4">
-        <a href="#about" class="hover:text-blue-500">About</a>
-        <a href="#projects" class="hover:text-blue-500">Projects</a>
-        <a href="#skills" class="hover:text-blue-500">Skills</a>
-        <a href="#contact" class="hover:text-blue-500">Contact</a>
-      </nav>
-    </div>
-  </header>
+<body>
+	<div class="background"></div>
 
-  <section class="mhead2 text-center py-20" id="hero">
-    <h2 class="text-4xl font-bold mb-4"><span class="mhead4">Hello, I'm Harsh Sharma</span></h2>
-    <p class="text-lg max-w-xl mx-auto">A student passionate about web development, machine learning and building cool things with code.</p>
-  </section>
+	<nav>
+		<div class="nav-container">
+			<h2 class="logo">Harsh Sharma</h2>
+			<ul class="nav-links">
+				<li><a href="#about">About</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
 
-  <section id="about" class="py-16 container mx-auto px-4">
-    <h2 class="text-2xl font-bold mb-4">About Me</h2>
-    <p>I’m currently studying Mechanical Enginering at Indian Institute of Technology, Ropar. I enjoy working with Python, C++, JavaScript and constantly learning new tech stuff.</p>
-  </section>
+	<div class="container">
+		<header>
+			<h2>Hello, I'm Harsh Sharma</h2>
+			<p>Software Development • Deep Learning • Applied Mathematics</p>
+		</header>
 
-  <section id="projects" class="py-16 bg-gray-100">
-    <div class="container mx-auto px-4">
-      <h2 class="text-2xl font-bold mb-6">My Projects</h2>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="bg-white p-4 shadow rounded">
-          <h3 class="text-xl font-semibold">Gesture Controlled Car</h3>
-          <p class="text-sm">A robotic car that can be controlled using hand gestures.</p>
-          <a href="https://github.com/harsh-sharma02/" class="text-blue-600 underline text-sm">View on GitHub</a>
-        </div>
-        <div class="bg-white p-4 shadow rounded">
-          <h3 class="text-xl font-semibold">2D Printer Prototype</h3>
-          <p class="text-sm">This projects uses stepper motors and allows the movement of a pen to draw complex vector graphics.</p>
-          <a href="https://github.com/harsh-sharma02" class="text-blue-600 underline text-sm">View on GitHub</a>
-        </div>
-      </div>
-    </div>
-  </section>
+		<section class="about" id="about">
+			<h2>About Me</h2>
+			<p>
+				I am a third year mechanical engineering student with deep interest in software development, artificial
+				intelligence and applied mathematics.
+				Alongside my core mechanical engineering studies, I am passionate about robotics, autonomous systems and
+				aviation.
+			</p>
+			<br />
+			<p>
+				I enjoy learning and experimenting new things, whether its about coding functional & efficient
+				algorithms, analysing mathematical models or learning how machines work.
+			</p>
+		</section>
 
-  <section id="skills" class="py-16 container mx-auto px-4">
-    <h2 class="text-2xl font-bold mb-4">Skills</h2>
-    <ul class="flex flex-wrap gap-4 text-sm">
-      <li class="bg-blue-100 px-3 py-1 rounded">Python</li>
-      <li class="bg-blue-100 px-3 py-1 rounded">C++</li>
-      <li class="bg-blue-100 px-3 py-1 rounded">JavaScript</li>
-      <li class="bg-blue-100 px-3 py-1 rounded">Arduino</li>
-      <li class="bg-blue-100 px-3 py-1 rounded">Embedded Systems</li>
-      <li class="bg-blue-100 px-3 py-1 rounded">Robotics</li>
-      <li class="bg-blue-100 px-3 py-1 rounded">Automation</li>
-    </ul>
-  </section>
+		<section class="skills" id="skills">
+			<h2>Skills & Technologies</h2>
+			<div class="skills-grid">
+				<div class="skill">C/C++</div>
+				<div class="skill">Java</div>
+				<div class="skill">Python</div>
+				<div class="skill">JavaScript</div>
+				<div class="skill">SQL</div>
+				<div class="skill">HTML5</div>
+				<div class="skill">CSS3</div>
+				<div class="skill">MATLAB</div>
+				<div class="skill">LaTeX</div>
+				<div class="skill">Tensorflow</div>
+				<div class="skill">Keras</div>
+				<div class="skill">MatPlotLib</div>
+				<div class="skill">Scikit-Learn</div>
+				<div class="skill">Pandas</div>
+				<div class="skill">NumPy</div>
+				<div class="skill">ReactJS</div>
+				<div class="skill">NodeJS</div>
+				<div class="skill">Arduino</div>
+				<div class="skill">Git/GitHub</div>
+			</div>
+		</section>
 
-  <section id="contact" class="py-16 bg-gray-100">
-    <div class="container mx-auto px-4 text-center">
-      <h2 class="text-2xl font-bold mb-4">Contact</h2>
-      <div class="mt-4 space-x-4">
-        <a href="https://github.com/harsh-sharma02" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/harsh-sharma-iit-ropar" target="_blank">LinkedIn</a>
-      </div>
-    </div>
-  </section>
+		<section class="projects" id="projects">
+			<h2>Projects</h2>
 
-  <footer class="text-center py-4 bg-white mt-8 text-sm">
-    &copy; 2025 Harsh Sharma. All rights reserved.
-  </footer>
+			<div class="project-card">
+				<h3>Self Driving Car Simulator(using Genetic Algorithm)</h3>
+				<p>
+					Designed and built an interactive 2D self-driving car simulator in JS without any external libraries; built on top of HTML5 canvas.
+				</p>
+				<p>
+					Implemented a custom genetic algorithm to train the car, refining the car control logic over generations.
+				</p>
+				<a href="https://github.com/harsh-sharma02/self-driving-car-simulator" target="_blank">GitHub →</a>
+			</div>
 
+			<div class="project-card">
+				<h3>Stock Price Predictor</h3>
+				<p>
+					Developed a stock price prediction model using Python, Keras and Tensorflow; also utilized pandas and yfinance to collect and preprocess the historical financial data, specifically for the AAPL stock.
+				</p>
+				<p>
+					Built a custom neural network in Keras to model price trends using features like previous day price, SMA-10 and SMA-50; achieving accurate regression outputs for short-term predictions.
+
+				</p>
+				<a href="https://github.com/harsh-sharma02/stock-price-predictor" target="_blank">GitHub →</a>
+			</div>
+
+			<div class="project-card">
+				<h3>Hand Gesture-Controlled Robotic Car</h3>
+				<p>
+					Implemented real-time hand motion detection by processing the 6-axis accelerometer data, thus recognizing different hand gestures; and built the input handler function for car, which allows the car to move efficiently according to the input received.
+				</p>
+				<p>
+					Programmed the wireless communication using nRF24L01 trans-receivers over the Serial Peripheral Interface (SPI) protocol.
+				</p>
+				<a href="https://github.com/harsh-sharma02/gesture-controlled-car" target="_blank">GitHub →</a>
+			</div>
+
+			<div class="project-card">
+				<h3>Basic 2D Printer Prototype</h3>
+				<p>
+					Developed a fully functional 2D printer prototype using Arduino and GRBL firmware; and implemented custom G-Code parser algorithm to convert design files into movement commands.
+				</p>
+				<p>
+					Integrated the GRBL firmware, which interprets G-Code instructions and coordinates the X-Y motion with high accuracy; used the Universal G-Code Sender software for the serial communication between the Arduino and the computer.
+				</p>
+				<a href="https://github.com/harsh-sharma02/basic-2d-printer" target="_blank">GitHub →</a>
+			</div>
+
+			<div class="project-card">
+				<h3>Real Time Object-Tracking System</h3>
+				<p>
+					Implemented a real time object tracking algorithm using MATLAB; combined image processing, machine learning and Kalman filtering for accurate image positioning.
+				</p>
+				<p>
+					Manually labeled video frames to create a custom dataset, used for training a classification model. Also, implemented a Kalman Filter to predict accurate object positions across frames under occlusion and motion uncertainty.
+				</p>
+				<a href="https://github.com/harsh-sharma02/real-time-object-tracker" target="_blank">GitHub →</a>
+			</div>
+
+		</section>
+
+		<section class="contact" id="contact">
+			<h2>Contact</h2>
+			<p>
+				<a href="https://www.linkedin.com/in/harsh-sharma-iit-ropar" target="_blank">LinkedIn</a>
+				<a href="https://github.com/harsh-sharma02" target="_blank">GitHub</a>
+			</p>
+		</section>
+	</div>
+
+	<footer>
+		<p>&copy; <span id="year"></span> Harsh Sharma. All Rights Reserved.</p>
+	</footer>
+
+	<script src="js/main.js"></script>
 </body>
 </html>
