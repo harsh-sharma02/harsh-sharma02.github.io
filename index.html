@@ -1,149 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Harsh Sharma | Portfolio</title>
-	<link rel="stylesheet" href="style.css" />
-	<link rel="shortcut icon" href="img/favicon.ico" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Harsh Sharma — Portfolio</title>
+<meta name="description" content="Mechanical engineering student working across CAE, software and applied robotics." />
+<link rel="stylesheet" href="style.css" />
+<link rel="shortcut icon" href="img/favicon.ico" />
 </head>
-
 <body>
-	<div class="background"></div>
 
-	<nav>
-		<div class="nav-container">
-			<h2 class="logo">Harsh Sharma</h2>
-			<ul class="nav-links">
-				<li><a href="#about">About</a></li>
-				<li><a href="#skills">Skills</a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
+  <div id="cursor"><span class="dot"></span></div>
+  <div id="ruler"><div id="ruler-fill"></div></div>
+
+  <header class="nav">
+    <div class="wrap nav-row">
+      <div class="nav-mark" style="font-size: 20px;">Harsh Sharma</div>
+      <ul class="nav-links">
+        <li><a href="#about" data-nav="about">About</a></li>
+        <li><a href="#skills" data-nav="skills">Skills</a></li>
+        <li><a href="#experience" data-nav="experience">Experience</a></li>
+        <li><a href="#projects" data-nav="projects">Projects</a></li>
+        <li><a href="#contact" data-nav="contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="hero" data-section="Hero">
+    <div class="hero-grid-layer"></div>
+    <div class="hero-vignette"></div>
+    <div class="hero-frame">
+      <p class="hero-kicker">Software Development • Deep Learning • Applied Mathematics</p>
+      <h1>Building the parts that move, and the code that decides how.</h1>
+      <svg class="underline" viewBox="0 0 260 14" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M2 8 C 60 2, 90 12, 140 6 S 220 2, 258 8" />
+      </svg>
+      <p class="lede">
+        I work on mechanical simulations, design, software development, robotics and autonomous systems.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">View projects</a>
+        <a class="btn btn-ghost" href="#contact">Get in touch</a>
+      </div>
+      <div class="title-block">
+        <div><span class="tb-label">NAME</span><span class="tb-value">Harsh Sharma</span></div>
+        <div><span class="tb-label">CORE DISCIPLINE</span><span class="tb-value">Mechanical Engineering</span></div>
+        <div><span class="tb-label">FOCUS</span><span class="tb-value">Software Development & Robotics</span></div>
+        <div><span class="tb-label">STATUS</span><span class="tb-value">Open to opportunities</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" data-section="About">
+    <div class="wrap about-grid">
+      <div class="about-text reveal">
+        <h2 style="font-size:1.7rem; margin-bottom:20px;">About</h2>
+        <p>
+			I am Harsh Sharma, a fourth year mechanical engineering student with deep interest in software development, artificial intelligence and applied mathematics. Alongside my core mechanical engineering studies, I am passionate about robotics, autonomous systems and aviation.
+		</p>
+        <p>I enjoy learning and experimenting new things, whether its about coding functional & efficient algorithms, analysing mathematical models or learning how machines work.</p>
+      </div>
+      <svg class="about-diagram reveal" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Line illustration of a gear intersecting a circuit path">
+        <circle cx="160" cy="160" r="150" fill="none" stroke="#E7EBE3" stroke-width="1"/>
+        <g class="gear-group" stroke="#0E2233" stroke-width="1.4" fill="none">
+          <circle cx="130" cy="140" r="46"/>
+          <circle cx="130" cy="140" r="18"/>
+          <rect x="124" y="86" width="12" height="16"/>
+          <rect x="124" y="178" width="12" height="16"/>
+          <rect x="176" y="134" width="16" height="12"/>
+          <rect x="72" y="134" width="16" height="12"/>
+          <rect x="160" y="102" width="14" height="12" transform="rotate(45 167 108)"/>
+          <rect x="86" y="102" width="14" height="12" transform="rotate(-45 93 108)"/>
+          <rect x="160" y="170" width="14" height="12" transform="rotate(-45 167 176)"/>
+          <rect x="86" y="170" width="14" height="12" transform="rotate(45 93 176)"/>
+        </g>
+        <path class="circuit-path" d="M40 240 H120 V210 H190 V240 H260" stroke="#E8A33D" stroke-width="1.6" fill="none"/>
+        <circle cx="120" cy="210" r="4" fill="#E8A33D"/>
+        <circle cx="190" cy="240" r="4" fill="#E8A33D"/>
+        <circle cx="260" cy="240" r="4" fill="#E8A33D"/>
+        <path class="circuit-path" d="M210 90 H270 V150" stroke="#7FB8C4" stroke-width="1" fill="none"/>
+        <circle cx="270" cy="150" r="4" fill="#7FB8C4"/>
+      </svg>
+    </div>
+  </section>
+
+  <section id="skills" style="background:var(--paper-2);" data-section="Skills">
+    <div class="wrap">
+      <div class="section-head reveal"><h2>Skills</h2></div>
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <h3>Mechanical &amp; CAE</h3>
+          <div class="skill-row"><div class="sr-top"><span>ANSYS Mechanical</span></div><div class="meter"><div class="meter-fill strong" data-level="100"></div></div></div>
+          <div class="skill-row"><div class="sr-top"><span>Siemens NX</span></div><div class="meter"><div class="meter-fill strong" data-level="100"></div></div></div>
+          <div class="skill-row"><div class="sr-top"><span>SolidWorks</span></div><div class="meter"><div class="meter-fill" data-level="90"></div></div></div>
+          <div class="skill-row"><div class="sr-top"><span>MATLAB, Simulink</span></div><div class="meter"><div class="meter-fill" data-level="90"></div></div></div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Software Development</h3>
+          <div class="skill-row"><div class="sr-top"><span>Python</span></div><div class="meter"><div class="meter-fill strong" data-level="90"></div></div></div>
+          <div class="skill-row"><div class="sr-top"><span>C / C++, Java</span></div><div class="meter"><div class="meter-fill" data-level="70"></div></div></div>
+          <div class="skill-row"><div class="sr-top"><span>JavaScript, React, NodeJS, SQL</span></div><div class="meter"><div class="meter-fill" data-level="75"></div></div></div>
+          <div class="skill-row"><div class="sr-top"><span>TensorFlow / Keras</span></div><div class="meter"><div class="meter-fill" data-level="65"></div></div></div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Tools &amp; Platforms</h3>
+          <div class="skill-row"><div class="sr-top"><span>Git / GitHub</span></div><div class="meter"><div class="meter-fill strong" data-level="95"></div></div></div>
+          <div class="skill-row"><div class="sr-top"><span>Arduino, ESP32, Raspberry Pi</span></div><div class="meter"><div class="meter-fill" data-level="88"></div></div></div>
+          <div class="skill-row"><div class="sr-top"><span>LaTeX</span></div><div class="meter"><div class="meter-fill" data-level="85"></div></div></div>
+          <div class="skill-row"><div class="sr-top"><span>Embedded Systesm</span></div><div class="meter"><div class="meter-fill" data-level="88"></div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" data-section="Experience">
+    <div class="wrap">
+      <div class="section-head reveal"><h2>Experience</h2></div>
+      <div class="timeline">
+        <div class="timeline-line"></div>
+        <div class="timeline-item reveal">
+          <div class="role-row"><h3>Design & Computational Analysis Intern</h3><span class="meta">May 2026 – Jul 2026</span></div>
+          <p class="org">NTF India Pvt. Ltd. - Gurugram, Haryana</p>
+          <ul>
+            <li>
+				As an Engineering Intern in the Design department at NTF India, I worked on CAE-based structural analysis of automotive components using ANSYS, translating engineering problems into structured computational setups - configuring parameters, solver settings, and simulation workflows across multiple design iterations.
+			</li>
+            <li>
+				I worked with large FE-generated datasets, systematically interpreting stress and deformation results to catch design issues early, and debugged simulation convergence errors through root-cause analysis.
+			</li>
+            <li>
+				This built strong skills in structured problem-solving, working with numerical data at scale, and communicating technical findings clearly.
+			</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" style="background:var(--paper-2);" data-section="Projects">
+    <div class="wrap">
+      <div class="section-head reveal"><h2>Projects</h2></div>
+      <div class="projects-grid">
+        <div class="sheet reveal">
+			<h3>Self Driving Car Simulator (using Genetic Algorithm)</h3>
+			<p>
+				Designed and built an interactive 2D self-driving car simulator in JS without any external libraries; built on top of HTML5 canvas.
+				<br/><br/>Implemented a custom genetic algorithm to train the car, refining the car control logic over generations.
+			</p>
+			<a class="sheet-link" target="_blank" href="https://github.com/harsh-sharma02/self-driving-car-simulator">View on GitHub</a>
 		</div>
-	</nav>
-
-	<div class="container">
-		<header>
-			<h2>Hello, I'm Harsh Sharma</h2>
-			<p>Software Development • Deep Learning • Applied Mathematics</p>
-		</header>
-
-		<section class="about" id="about">
-			<h2>About Me</h2>
+		<div class="sheet reveal">
+			<h3>Stock Price Predictor</h3>
 			<p>
-				I am a third year mechanical engineering student with deep interest in software development, artificial
-				intelligence and applied mathematics.
-				Alongside my core mechanical engineering studies, I am passionate about robotics, autonomous systems and
-				aviation.
+				Developed a stock price prediction model using Python, Keras and Tensorflow; also utilized pandas and yfinance to collect and preprocess the historical financial data, specifically for the AAPL stock.
+				<br/><br/>Built a custom neural network in Keras to model price trends using features like previous day price, SMA-10 and SMA-50; achieving accurate regression outputs for short-term predictions.
 			</p>
-			<br />
+			<a class="sheet-link" target="_blank" href="https://github.com/harsh-sharma02/stock-price-predictor">View on GitHub</a>
+		</div>
+		<div class="sheet reveal">
+			<h3>Hand Gesture-Controlled Robotic Car</h3>
 			<p>
-				I enjoy learning and experimenting new things, whether its about coding functional & efficient
-				algorithms, analysing mathematical models or learning how machines work.
+				Implemented real-time hand motion detection by processing the 6-axis accelerometer data, thus recognizing different hand gestures; and built the input handler function for car, which allows the car to move efficiently according to the input received.
+				<br/><br/>Programmed the wireless communication using nRF24L01 trans-receivers over the Serial Peripheral Interface (SPI) protocol.
 			</p>
-		</section>
-
-		<section class="skills" id="skills">
-			<h2>Skills & Technologies</h2>
-			<div class="skills-grid">
-				<div class="skill">C/C++</div>
-				<div class="skill">Java</div>
-				<div class="skill">Python</div>
-				<div class="skill">JavaScript</div>
-				<div class="skill">SQL</div>
-				<div class="skill">HTML5</div>
-				<div class="skill">CSS3</div>
-				<div class="skill">MATLAB</div>
-				<div class="skill">LaTeX</div>
-				<div class="skill">Tensorflow</div>
-				<div class="skill">Keras</div>
-				<div class="skill">MatPlotLib</div>
-				<div class="skill">Scikit-Learn</div>
-				<div class="skill">Pandas</div>
-				<div class="skill">NumPy</div>
-				<div class="skill">ReactJS</div>
-				<div class="skill">NodeJS</div>
-				<div class="skill">Arduino</div>
-				<div class="skill">Git/GitHub</div>
-			</div>
-		</section>
-
-		<section class="projects" id="projects">
-			<h2>Projects</h2>
-
-			<div class="project-card">
-				<h3>Self Driving Car Simulator(using Genetic Algorithm)</h3>
-				<p>
-					Designed and built an interactive 2D self-driving car simulator in JS without any external libraries; built on top of HTML5 canvas.
-				</p>
-				<p>
-					Implemented a custom genetic algorithm to train the car, refining the car control logic over generations.
-				</p>
-				<a href="https://github.com/harsh-sharma02/self-driving-car-simulator" target="_blank">GitHub →</a>
-			</div>
-
-			<div class="project-card">
-				<h3>Stock Price Predictor</h3>
-				<p>
-					Developed a stock price prediction model using Python, Keras and Tensorflow; also utilized pandas and yfinance to collect and preprocess the historical financial data, specifically for the AAPL stock.
-				</p>
-				<p>
-					Built a custom neural network in Keras to model price trends using features like previous day price, SMA-10 and SMA-50; achieving accurate regression outputs for short-term predictions.
-
-				</p>
-				<a href="https://github.com/harsh-sharma02/stock-price-predictor" target="_blank">GitHub →</a>
-			</div>
-
-			<div class="project-card">
-				<h3>Hand Gesture-Controlled Robotic Car</h3>
-				<p>
-					Implemented real-time hand motion detection by processing the 6-axis accelerometer data, thus recognizing different hand gestures; and built the input handler function for car, which allows the car to move efficiently according to the input received.
-				</p>
-				<p>
-					Programmed the wireless communication using nRF24L01 trans-receivers over the Serial Peripheral Interface (SPI) protocol.
-				</p>
-				<a href="https://github.com/harsh-sharma02/gesture-controlled-car" target="_blank">GitHub →</a>
-			</div>
-
-			<div class="project-card">
-				<h3>Basic 2D Printer Prototype</h3>
-				<p>
-					Developed a fully functional 2D printer prototype using Arduino and GRBL firmware; and implemented custom G-Code parser algorithm to convert design files into movement commands.
-				</p>
-				<p>
-					Integrated the GRBL firmware, which interprets G-Code instructions and coordinates the X-Y motion with high accuracy; used the Universal G-Code Sender software for the serial communication between the Arduino and the computer.
-				</p>
-				<a href="https://github.com/harsh-sharma02/basic-2d-printer" target="_blank">GitHub →</a>
-			</div>
-
-			<div class="project-card">
-				<h3>Real Time Object-Tracking System</h3>
-				<p>
-					Implemented a real time object tracking algorithm using MATLAB; combined image processing, machine learning and Kalman filtering for accurate image positioning.
-				</p>
-				<p>
-					Manually labeled video frames to create a custom dataset, used for training a classification model. Also, implemented a Kalman Filter to predict accurate object positions across frames under occlusion and motion uncertainty.
-				</p>
-				<a href="https://github.com/harsh-sharma02/real-time-object-tracker" target="_blank">GitHub →</a>
-			</div>
-
-		</section>
-
-		<section class="contact" id="contact">
-			<h2>Contact</h2>
+			<a class="sheet-link" target="_blank" href="https://github.com/harsh-sharma02/gesture-controlled-car">View on GitHub</a>
+		</div>
+		<div class="sheet reveal">
+			<h3>Basic 2D Printer Prototype</h3>
 			<p>
-				<a href="https://www.linkedin.com/in/harsh-sharma-iit-ropar" target="_blank">LinkedIn</a>
-				<a href="https://github.com/harsh-sharma02" target="_blank">GitHub</a>
+				Developed a fully functional 2D printer prototype using Arduino and GRBL firmware; and implemented custom G-Code parser algorithm to convert design files into movement commands.
+				<br/><br/>Integrated the GRBL firmware, which interprets G-Code instructions and coordinates the X-Y motion with high accuracy; used the Universal G-Code Sender software for the serial communication between the Arduino and the computer.
 			</p>
-		</section>
-	</div>
+			<a class="sheet-link" target="_blank" href="https://github.com/harsh-sharma02/basic-2d-printer">View on GitHub</a>
+		</div>
+		<div class="sheet reveal">
+			<h3>Real Time Object-Tracking System</h3>
+			<p>
+				Implemented a real time object tracking algorithm using MATLAB; combined image processing, machine learning and Kalman filtering for accurate image positioning.
+				<br/><br/>Manually labeled video frames to create a custom dataset, used for training a classification model. Also, implemented a Kalman Filter to predict accurate object positions across frames under occlusion and motion uncertainty.
+			</p>
+			<a class="sheet-link" target="_blank" href="https://github.com/harsh-sharma02/real-time-object-tracker">View on GitHub</a>
+		</div>
+    </div>
+  </section>
 
-	<footer>
-		<p>&copy; <span id="year"></span> Harsh Sharma. All Rights Reserved.</p>
-	</footer>
+  <section class="contact" id="contact" data-section="Contact">
+    <div class="wrap">
+      <div class="section-head reveal"><h2>Contact</h2></div>
+      <div class="contact-row">
+        <div class="contact-text reveal">
+          <p>Reach out to me directly. Let's build amazing stuff together !</p>
+          <div class="contact-status"><span class="sb-dot"></span><span id="local-time">--:--:--</span> local time</div>
+        </div>
+        <div class="contact-list reveal">
+          <a href="mailto:harshsharma1025@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/harsh-sharma-iit-ropar" target="_blank">LinkedIn</a>
+          <a href="https://github.com/harsh-sharma02" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-	<script src="js/main.js"></script>
+  <footer>
+    <div class="wrap"><span>&copy; <span id="year"></span> Harsh Sharma</span></div>
+  </footer>
+
+  <div id="statusbar">
+    <div class="wrap">
+      <span><span class="sb-dot"></span>HARSH SHARMA - PORTFOLIO</span>
+      <div id="statusbar-fields">
+        <span>COORD: <span class="sb-live" id="sb-coord">X 0.00  Y 0.00</span></span>
+        <span>SCROLL: <span class="sb-live" id="sb-scroll">0%</span></span>
+        <span>UNITS: MM</span>
+      </div>
+    </div>
+  </div>
+
+<script src="js/main.js"></script>
+
 </body>
 </html>
